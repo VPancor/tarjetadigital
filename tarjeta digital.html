@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFC0CB;
+            font-family: 'Roboto', sans-serif;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 350px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img.logo {
+            width: 80px;
+            height: auto;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .card h1 {
+            font-size: 24px;
+            color: #FF6347;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .card h2 {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card .info {
+            margin-bottom: 15px;
+        }
+        .card .info p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        .card .info p i {
+            margin-right: 10px;
+            color: #FF6347;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #FF6347;
+            font-size: 24px;
+            transition: color 0.2s ease;
+        }
+        .social-icons a:hover {
+            color: #32CD32;
+        }
+        .button {
+            display: block;
+            background-color: #FF6347;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #CD5C5C;
+        }
+        .qr {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+        }
+        @media (max-width: 400px) {
+            .card {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Logo (opcional) -->
+        <img src="logo.png" alt="Logo" class="logo">
+        <!-- Información Personal -->
+        <h1>Nombre</h1>
+        <h2>Puesto en Empresa</h2>
+        <!-- Información de contacto -->
+        <div class="info">
+            <p><i>📞</i> +34 123 456 789</p>
+            <p><i>✉️</i> email@ejemplo.com</p>
+            <p><i>🌐</i> <a href="https://ejemplo.com" target="_blank">www.ejemplo.com</a></p>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="social-icons">
+            <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">🔗 Instagram</a>
+        </div>
+        <!-- Botón para agendar cita -->
+        <a href="https://wa.me/123456789" class="button" target="_blank">Agendar Cita</a>
+        <!-- Código QR (opcional) -->
+        <img src="qr-code.png" alt="Código QR" class="qr">
+    </div>
+</body>
+</html>
